@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number>(0);
@@ -24,31 +23,36 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-12 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-[1120px] mx-auto">
-          <h2 className="text-2xl font-bold text-[#242933] text-right mb-16">
+          <h2 className="text-lg lg:text-2xl font-bold text-[#242933] text-right mb-8 lg:mb-16">
             سوالات متداول
           </h2>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 lg:gap-5">
             {faqs.map((faq, index) => (
               <div
                 key={index}
                 className={`border border-[#D6D9DF] rounded-xl bg-white p-3 transition-all ${
-                  openIndex === index ? 'shadow-sm' : ''
+                  openIndex === index ? '' : ''
                 }`}
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                   className="w-full flex items-center gap-3 text-right"
                 >
-                  <ChevronDown 
+                  <svg 
                     className={`w-[18px] h-[18px] text-[#4F545E] flex-shrink-0 transition-transform ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
-                  />
-                  <span className="flex-1 text-sm font-medium leading-6 text-[#4F545E]">
+                    fill="none"
+                    viewBox="0 0 18 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8.99965 12.6C8.47465 12.6 7.94965 12.3975 7.55215 12L2.66215 7.10998C2.44465 6.89248 2.44465 6.53248 2.66215 6.31498C2.87965 6.09748 3.23965 6.09748 3.45715 6.31498L8.34715 11.205C8.70715 11.565 9.29215 11.565 9.65215 11.205L14.5421 6.31498C14.7596 6.09748 15.1196 6.09748 15.3371 6.31498C15.5546 6.53248 15.5546 6.89248 15.3371 7.10998L10.4471 12C10.0496 12.3975 9.52465 12.6 8.99965 12.6Z" fill="currentColor"/>
+                  </svg>
+                  <span className="flex-1 text-sm lg:text-base font-medium leading-6 lg:leading-[22px] text-[#4F545E]">
                     {faq.question}
                   </span>
                 </button>
