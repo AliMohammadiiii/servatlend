@@ -1,0 +1,182 @@
+/** @import must precede all other statements */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F2a412dbc3abd4416b5d5f5f58a6bc548?alt=media&token=541702ae-38c6-47da-a525-fa009d5d99e0&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F8bda1a0eb65647f684092b1da3523a87?alt=media&token=f2a8e9c5-87d4-4c7e-9e9e-0d5db35fc94e&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2Fd52ce93695e346eebf556fc2acc89499?alt=media&token=44ca7abd-5c2b-4374-b5a7-caab387d6ef2&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2Fad758295009844b191165de51429d41f?alt=media&token=f92d66c7-4aca-4602-87d6-85617ff70eaf&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F2210a11363464528978ffc0758c2fd9f?alt=media&token=c12283b0-75cc-48a5-a581-ec73d007221f&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F3e460058e412457db30d6ab48a862619?alt=media&token=01e15d37-234b-4e10-9930-f45236ed0a25&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2Fd9399b6a956d45d48b03d53431d5637c?alt=media&token=657909ff-4390-4feb-9b02-fe8943c671d4&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F193133ee2bbd4fd7880c3630d53f8def?alt=media&token=7a08ae4c-0b9a-49d7-9b4e-be58c4a81a3e&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F64c8fc331cc144a3b5cccfb33f1e3d65?alt=media&token=fb8302c8-0496-4178-a686-c8cddebb2b67&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F931ee7e4a7004db988d245daa37d15dd?alt=media&token=dfa3a8dc-ea10-4f91-8363-4b01af6a625d&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanXFaNum';
+  src: url('https://cdn.builder.io/o/assets%2F2ccfcdc057424b9eb03a0d097a076671%2F58089ece018a451bafffcf0a348debb5?alt=media&token=aa7adf41-7215-4056-bf1b-14b308b11277&apiKey=2ccfcdc057424b9eb03a0d097a076671') format('woff2');
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 17%;
+
+    --primary: 207 91% 43%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 212 40% 95%;
+    --secondary-foreground: 220 20% 17%;
+
+    --muted: 212 40% 95%;
+    --muted-foreground: 218 11% 58%;
+
+    --accent: 212 40% 95%;
+    --accent-foreground: 220 20% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 22% 87%;
+    --input: 215 22% 87%;
+    --ring: 220 20% 17%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 20% 17%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 20% 17%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 20% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 220 20% 17%;
+
+    --secondary: 218 27% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 218 27% 25%;
+    --muted-foreground: 217 15% 73%;
+
+    --accent: 218 27% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 27% 25%;
+    --input: 218 27% 25%;
+    --ring: 217 15% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    direction: rtl;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IRANYekanXFaNum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
